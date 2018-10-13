@@ -1,0 +1,233 @@
+/*
+ * Site Specific, Custom Styles
+ *
+ */
+:root {
+    --base-muted: #441;
+    --base-bright: #673;
+    --base-brushed: #995;
+    --base-hint: #E8EADE;
+    --accent-muted: #B0431B;
+    --accent-bright: #D52;
+    --accent-brushed: #E3764E;
+    --accent-hint: #FBEDE8;
+}
+
+* {
+    box-sizing: border-box
+}
+
+h1, p {
+    color: var(--base-muted);
+}
+
+@media screen {
+    a {
+        color: inherit;
+        text-decoration: none
+    }
+
+    body {
+        height: 100%;
+        overflow-x: hidden
+    }
+
+    body>div {
+        display: flex;
+        min-height: 100%;
+        flex-direction: column
+    }
+
+    html {
+        height: 100%;
+        webkit-font-smoothing: antialiased;
+        moz-osx-font-smoothing: grayscale
+    }
+}
+
+.container {
+    width: 100%;
+    align-self: center;
+    flex-direction: column;
+}
+
+.bgimg {
+    width: 100%;
+    max-width: 1280px;
+    background: right top -64px no-repeat;
+    justify-content: center;
+    background-size: 810px;
+    background-image: url(/img/hero-fq.png);
+}
+
+@media all and (min-width:900px) and (max-width:1199px) {
+    .bgimg {
+        background-position: right -56px top -64px;
+    }
+
+    @media (-webkit-min-device-pixel-ratio:1.5),
+    (min-resolution:144dpi) {
+        .bgimg {
+            background-image: url(/hero/hero-bcg-x2.png);
+        }
+    }
+}
+
+@media all and (min-width:600px) and (max-width:899px) {
+    .bgimg {
+        background-size: 696px;
+        background-position: right -128px top -64px;
+    }
+
+    @media (-webkit-min-device-pixel-ratio:1.5),
+    (min-resolution:144dpi) {
+        .bgimg {
+            background-image: url(/hero/hero-bcg-small-x2.png);
+        }
+    }
+}
+
+@media all and (min-width:0) and (max-width:599px) {
+    .bgimg {
+        background-size: 696px;
+        background-position: right -248px top -128px;
+    }
+
+    @media (-webkit-min-device-pixel-ratio:1.5),
+    (min-resolution:144dpi) {
+        .bgimg {
+            background-image: url(/hero/hero-bcg-small-x2.png);
+        }
+    }
+}
+
+.bgimg-container {
+    display: flex;
+    list-style: none;
+    max-width: auto;
+    width: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.content {
+    margin: 0;
+    height: 480px;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+@media all and (min-width:0) and (max-width:599px) {
+    .content {
+        height: 560px;
+        align-items: flex-end;
+    }
+}
+
+.content-container {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    max-width: 960px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.inner-content-container {
+    width: 100%;
+    max-width: 344px;
+    flex-direction: column;
+}
+
+.btn {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px 0 24px;
+    display: flex;
+    max-width: 280px;
+    align-items: center;
+    margin-bottom: 8px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.btn > p {
+    color: #fff;
+}
+
+.btn-android {
+    background-color: var(--accent-bright);
+}
+
+@media all and (min-width:0) and (max-width:599px) {
+    .btn-android {
+        max-width: unset;
+    }
+}
+
+.btn-android:hover {
+    background-color: var(--accent-brushed);
+}
+
+.btn-iphone {
+    background-color: var(--base-bright);
+}
+
+@media all and (min-width:0) and (max-width:599px) {
+    .btn-iphone {
+        max-width: unset;
+    }
+}
+
+.btn-iphone:hover {
+    background-color: var(--base-brushed);
+}
+
+.svg-icon {
+    width: 80%;
+    height: 80%;
+}
+
+
+.text {
+    margin: 0;
+    /* display: flex; */
+    font-family: Lato, sans-serif;
+    line-height: 1.4;
+    font-display: block
+}
+
+.text-header {
+    font-size: 40px;
+    font-weight: 900;
+    width: 100%;
+    font-size: 40px;
+    max-width: 344px;
+    margin-bottom: 16px
+}
+
+.text-subheader {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.text-subheader > a {
+    color: #0000EE;
+}
+
+.text-subheader > a:visited {
+    color: #551A8B;
+}
+
+.text-subheader > a:active,
+.text-subheader > a:hover {
+    color: #F00;
+}
+
+.text-button {
+    font-size: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
