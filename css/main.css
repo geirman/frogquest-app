@@ -68,7 +68,7 @@ h1, p {
     @media (-webkit-min-device-pixel-ratio:1.5),
     (min-resolution:144dpi) {
         .bgimg {
-            background-image: url(/hero/hero-bcg-x2.png);
+            background-image: url(/img/hero-fq-x2.png);
         }
     }
 }
@@ -82,7 +82,7 @@ h1, p {
     @media (-webkit-min-device-pixel-ratio:1.5),
     (min-resolution:144dpi) {
         .bgimg {
-            background-image: url(/hero/hero-bcg-small-x2.png);
+            background-image: url(/img/hero-fq-small-x2.png);
         }
     }
 }
@@ -96,7 +96,7 @@ h1, p {
     @media (-webkit-min-device-pixel-ratio:1.5),
     (min-resolution:144dpi) {
         .bgimg {
-            background-image: url(/hero/hero-bcg-small-x2.png);
+            background-image: url(/img/hero-fq-small-x2.png);
         }
     }
 }
